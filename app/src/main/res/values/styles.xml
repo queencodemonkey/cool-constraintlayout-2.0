@@ -1,0 +1,64 @@
+<resources>
+
+  <!-- Themes -->
+  <!-- ====== -->
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColorPrimary">@color/gray_900</item>
+    <item name="android:windowEnterTransition">@android:transition/explode</item>
+    <item name="android:windowExitTransition">@android:transition/explode</item>
+    <item name="android:windowActivityTransitions">true</item>
+  </style>
+
+  <!-- Common -->
+  <!-- ====== -->
+  <style name="Divider">
+    <item name="android:background">@color/gray_700</item>
+  </style>
+
+  <style name="Image">
+    <item name="android:background">@color/white</item>
+    <item name="android:adjustViewBounds">true</item>
+    <item name="android:scaleType">centerCrop</item>
+    <item name="android:contentDescription">@null</item>
+  </style>
+
+  <style name="Title">
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+  </style>
+
+  <style name="Desc">
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+  </style>
+
+
+  <!-- ConstraintLayout 1.1 features -->
+  <!-- ============================= -->
+  <style name="FeatureTitle">
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+  </style>
+
+  <!-- Why MotionLayout? -->
+  <!-- ================= -->
+  <style name="Theme.YellowButton" parent="Theme.AppCompat">
+    <item name="colorButtonNormal">@color/yellow_a700</item>
+    <item name="colorControlHighlight">@color/amber_a700</item>
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <style name="Theme.TealButton" parent="Theme.AppCompat">
+    <item name="colorButtonNormal">@color/teal_a400</item>
+    <item name="colorControlHighlight">@color/teal_800</item>
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <!-- MotionLayout -->
+  <!-- ============ -->
+
+</resources>

@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <string name="app_name">Cool ConstraintLayout 2.0</string>
+
+  <!-- Landing screen -->
+  <!-- ============== -->
+  <string name="title_new_features">New Features from 1.1</string>
+  <string name="title_why_motion_layout">Why MotionLayout?</string>
+  <string name="title_motion_layout">MotionLayout!</string>
+  <string name="title_references">References</string>
+
+  <string name="constraint_hero_image_ratio">h,2:1</string>
+
+  <!-- ConstraintLayout 1.1 features -->
+  <!-- ============================= -->
+
+  <!-- Barriers -->
+  <string name="feature_barriers">Barriers</string>
+  <string name="content_description_barriers_image">an example image to demo barriers</string>
+  <string name="barrier_image_title">Sunrise in London.</string>
+  <string name="barrier_image_title_short" tools:ignore="UnusedResources">Sunrise.</string>
+  <string name="barrier_image_desc_01" tools:ignore="UnusedResources">By Luca Micheli.</string>
+  <string name="barrier_image_desc_02">By Luca Micheli on Unsplash.</string>
+
+  <!-- Percents -->
+  <string name="feature_percents">Percent Dimensions</string>
+
+  <!-- Circular Constraints -->
+  <string name="feature_circular">Circular Constraints</string>
+  <string name="content_description_icon_android">Happy 10th Birthday Android!</string>
+  <string name="content_description_icon_not_pink">This phone is Not Pink.</string>
+
+  <!-- Placeholders -->
+  <string name="feature_placeholders">Placeholders</string>
+  <string name="placeholder_image_title">Underground</string>
+  <string name="placeholder_image_desc">Photo by John Jackson on Unsplash</string>
+  <string name="placeholder_button_swap">Change Places!</string>
+  <string name="content_description_location_image">location image</string>
+  <string name="why_text_title">The Yellow Door at 34</string>
+  <string name="why_text_desc">Behind the Yellow Door at 34, there is a hidden store. The Hidden Store at 34 sells yellow shoes, nothing more.</string>
+  <string name="why_button_text">Enter</string>
+  <string name="why_button_text_swap">Swap Layouts</string>
+
+
+  <!-- MotionLayout -->
+  <!-- ============ -->
+
+</resources>

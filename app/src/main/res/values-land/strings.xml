@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Starting screen -->
+  <!-- =============== -->
+  <string name="constraint_hero_image_ratio">h,4:1</string>
+
+</resources>

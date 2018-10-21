@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/constraint_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingStart="@dimen/why_activity_padding_horizontal"
+  android:paddingEnd="@dimen/why_activity_padding_horizontal"
+  android:paddingTop="@dimen/why_activity_padding_top"
+  android:paddingBottom="@dimen/why_activity_padding_bottom"
+  tools:context=".motionlayout.WhyMotionLayoutActivity">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/TextAppearance.AppCompat.Headline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/image"
+    app:layout_constraintBottom_toTopOf="@+id/desc"
+    android:layout_marginTop="@dimen/why_title_margin_top"
+    android:layout_marginBottom="0dp"
+    android:text="@string/why_text_title" />
+
+  <TextView
+    android:id="@+id/desc"
+    style="@style/TextAppearance.AppCompat.Subhead"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/title"
+    app:layout_constraintBottom_toTopOf="@+id/button"
+    android:layout_marginTop="@dimen/why_desc_margin_top"
+    android:layout_marginBottom="@dimen/why_desc_margin_bottom"
+    android:textColor="?android:attr/textColorSecondary"
+    android:text="@string/why_text_desc"
+    app:layout_constrainedWidth="true" />
+
+  <ImageView
+    android:id="@+id/image"
+    style="@style/Image"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintDimensionRatio="H,16:9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/title"
+    app:layout_constraintVertical_chainStyle="packed"
+    app:layout_constraintVertical_bias="0"
+    android:contentDescription="@string/content_description_location_image"
+    android:elevation="@dimen/image_elevation"
+    android:background="@color/white"
+    android:src="@drawable/evelyn_paris_96422_unsplash" />
+
+  <Button
+    android:id="@+id/button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/desc"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginTop="24dp"
+    android:theme="@style/Theme.TealButton"
+    android:text="@string/why_button_text" />
+
+  <Button
+    android:id="@+id/button_swap"
+    style="@style/Base.Widget.AppCompat.Button.Colored"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:text="@string/why_button_text_swap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="colorPrimary">@color/pink_a700</color>
+  <color name="colorPrimaryDark">@color/pink_a700_dark</color>
+  <color name="colorAccent">@color/cyan_a400</color>
+
+  <!-- Material -->
+  <color name="red_a700">#D50000</color>
+
+  <color name="pink_a200">#FF4081</color>
+  <color name="pink_a700">#C51162</color>
+  <color name="pink_a700_dark">#8e0038</color>
+
+  <color name="deep_purple_a700">#6200EA</color>
+
+  <color name="cyan_a400">#00e5ff</color>
+
+  <color name="teal_800">#00695C</color>
+  <color name="teal_a400">#1DE9B6</color>
+
+  <color name="yellow_a700">#FFD600</color>
+
+  <color name="amber_a700">#FFAB00</color>
+
+  <color name="gray_400">#BDBDBD</color>
+  <color name="gray_600">#757575</color>
+  <color name="gray_700">#616161</color>
+  <color name="gray_900">#212121</color>
+
+  <!-- B+W -->
+  <color name="transparent">#00000000</color>
+  <color name="black">#000000</color>
+  <color name="white">#FFFFFF</color>
+
+  <!-- Other -->
+  <color name="android_green">#A4C639</color>
+  <color name="not_pink">#EEE1DE</color>
+  <color name="mint">#87E7B3</color>
+
+</resources>

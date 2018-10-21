@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+
+
+
+
+
+
+
+          _____               _
+         / ____|             | |
+        | |      ___    ___  | |
+        | |     / _ \  / _ \ | |
+        | |____| (_) || (_) || |
+         \_____|\___/  \___/ |_|
+          _____                    _                _         _
+         / ____|                  | |              (_)       | |
+        | |      ___   _ __   ___ | |_  _ __  __ _  _  _ __  | |_
+        | |     / _ \ | '_ \ / __|| __|| '__|/ _` || || '_ \ | __|
+        | |____| (_) || | | |\__ \| |_ | |  | (_| || || | | || |_
+         \_____|\___/ |_| |_||___/ \__||_|   \__,_||_||_| |_| \__|
+         _                                  _      ___      ___
+        | |                                | |    |__ \    / _ \
+        | |      __ _  _   _   ___   _   _ | |_      ) |  | | | |
+        | |     / _` || | | | / _ \ | | | || __|    / /   | | | |
+        | |____| (_| || |_| || (_) || |_| || |_    / /_  _| |_| |
+        |______|\__,_| \__, | \___/  \__,_| \__|  |____|(_)\___/
+                        __/ |
+                       |___/
+
+
+
+
+
+
+
+
+
+
+-->
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true"
+  tools:context=".features.FeaturesActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/features_activity_padding_horizontal"
+    android:paddingEnd="@dimen/features_activity_padding_horizontal"
+    android:paddingTop="@dimen/features_activity_padding_top"
+    android:paddingBottom="@dimen/features_activity_padding_bottom"
+    android:clipToPadding="false">
+
+    <TextView
+      android:id="@+id/title_barriers"
+      style="@style/FeatureTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/image_title"
+      android:layout_marginTop="@dimen/feature_title_margin_top"
+      android:layout_marginBottom="@dimen/feature_title_margin_bottom"
+      android:text="@string/feature_barriers" />
+
+    <View
+      android:id="@+id/divider_barriers"
+      style="@style/Divider"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/divider_thickness"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/title_barriers"
+      app:layout_constraintBottom_toTopOf="@+id/image"
+      android:layout_marginTop="0dp"
+      android:layout_marginBottom="@dimen/divider_margin_bottom" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+         ____                      _
+        |  _ \                    (_)
+        | |_) |  __ _  _ __  _ __  _   ___  _ __  ___
+        |  _ <  / _` || '__|| '__|| | / _ \| '__|/ __|
+        | |_) || (_| || |   | |   | ||  __/| |   \__ \
+        |____/  \__,_||_|   |_|   |_| \___||_|   |___/
+
+
+        - virtual guidelines
+        - defined by: direction and set of view IDs
+        - guideline positioned by furthest position in direction of defined view IDs
+        - can help with layouts that need more flexibility as content changes
+
+
+    -->
+
+
+    <ImageView
+      android:id="@+id/image"
+      style="@style/Image"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/image_height"
+      app:layout_constraintStart_toEndOf="@+id/image_title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/image_title"
+      android:layout_marginStart="@dimen/image_margin_horizontal"
+      android:src="@drawable/luca_micheli_422053_unsplash_1024"
+      android:contentDescription="@string/content_description_barriers_image" />
+
+    <!-- What happens as `android:text` of `image_title` and `image_desc` change? -->
+
+    <TextView
+      android:id="@+id/image_title"
+      style="@style/Title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/divider_barriers"
+      app:layout_constraintBottom_toTopOf="@+id/image_desc"
+      android:text="@string/barrier_image_title" />
+    <!--android:text="@string/barrier_image_title_short" />-->
+
+    <TextView
+      android:id="@+id/image_desc"
+      style="@style/Desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/image_title"
+      android:text="@string/barrier_image_desc_02" />
+    <!--android:text="@string/barrier_image_desc_01" />-->
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+
+          _____
+         / ____|
+        | |  __  _ __  ___   _   _  _ __   ___
+        | | |_ || '__|/ _ \ | | | || '_ \ / __|
+        | |__| || |  | (_) || |_| || |_) |\__ \
+         \_____||_|   \___/  \__,_|| .__/ |___/
+                                   | |
+                                   |_|
+
+
+        - virtual helper
+        - allows toggling visibility of entire group of views
+
+
+    -->
+
+
+    <androidx.constraintlayout.widget.Group
+      android:id="@+id/group_barriers"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:constraint_referenced_ids="title_barriers,divider_barriers,image,image_title,image_desc"
+      android:visibility="visible" />
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+
+    <TextView
+      android:id="@+id/title_percents"
+      style="@style/FeatureTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/divider_percents"
+      android:layout_marginTop="@dimen/feature_title_margin_top"
+      android:layout_marginBottom="@dimen/feature_title_margin_bottom"
+      android:text="@string/feature_percents" />
+
+    <View
+      android:id="@+id/divider_percents"
+      style="@style/Divider"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/divider_thickness"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/image_desc"
+      android:layout_marginTop="@dimen/divider_margin_top"
+      android:layout_marginBottom="@dimen/divider_margin_bottom"
+      app:layout_goneMarginTop="@dimen/divider_margin_top_gone" />
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+         _____                              _
+        |  __ \                            | |
+        | |__) |___  _ __  ___  ___  _ __  | |_
+        |  ___// _ \| '__|/ __|/ _ \| '_ \ | __|
+        | |   |  __/| |  | (__|  __/| | | || |_
+        |_|    \___||_|   \___|\___||_| |_| \__|
+          _____                    _                _         _
+         / ____|                  | |              (_)       | |
+        | |      ___   _ __   ___ | |_  _ __  __ _  _  _ __  | |_  ___
+        | |     / _ \ | '_ \ / __|| __|| '__|/ _` || || '_ \ | __|/ __|
+        | |____| (_) || | | |\__ \| |_ | |  | (_| || || | | || |_ \__ \
+         \_____|\___/ |_| |_||___/ \__||_|   \__,_||_||_| |_| \__||___/
+
+
+        - size a view as a percentage of the parent's size
+        - to set width/height as a percent, assign value of match constraint: "0dp"
+
+
+    -->
+
+
+    <View
+      android:id="@+id/view_deep_purple"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/percents_view_height"
+      app:layout_constraintWidth_percent=".5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider_percents"
+      android:layout_marginTop="@dimen/percents_view_margin_top"
+      android:layout_marginBottom="@dimen/percents_view_margin_bottom"
+      android:background="@color/deep_purple_a700" />
+
+    <View
+      android:id="@+id/view_teal"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/percents_view_height"
+      app:layout_constraintWidth_percent=".25"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider_percents"
+      android:layout_marginTop="@dimen/percents_view_margin_top"
+      android:layout_marginBottom="@dimen/percents_view_margin_bottom"
+      android:background="@color/teal_a400" />
+
+    <View
+      android:id="@+id/view_pink"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/percents_view_height"
+      app:layout_constraintWidth_percent=".25"
+      app:layout_constraintEnd_toStartOf="@+id/view_teal"
+      app:layout_constraintTop_toBottomOf="@id/divider_percents"
+      android:layout_marginTop="@dimen/percents_view_margin_top"
+      android:layout_marginBottom="@dimen/percents_view_margin_bottom"
+      android:background="@color/pink_a200" />
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+    <!-- Toggle Percent Constraints example -->
+    <androidx.constraintlayout.widget.Group
+      android:id="@+id/group_percents"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="title_percents,divider_percents,view_deep_purple,view_pink,view_teal"
+      android:visibility="visible" />
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+    <TextView
+      android:id="@+id/title_circular_constraints"
+      style="@style/FeatureTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/divider_circular_constraints"
+      android:layout_marginTop="@dimen/feature_title_margin_top"
+      android:layout_marginBottom="@dimen/feature_title_margin_bottom"
+      android:text="@string/feature_circular" />
+
+    <View
+      android:id="@+id/divider_circular_constraints"
+      style="@style/Divider"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/divider_thickness"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/view_teal"
+      android:layout_marginTop="@dimen/divider_margin_top"
+      android:layout_marginBottom="@dimen/divider_margin_bottom"
+      app:layout_goneMarginTop="@dimen/divider_margin_top_gone" />
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+          _____  _                    _
+         / ____|(_)                  | |
+        | |      _  _ __  ___  _   _ | |  __ _  _ __
+        | |     | || '__|/ __|| | | || | / _` || '__|
+        | |____ | || |  | (__ | |_| || || (_| || |
+         \_____||_||_|   \___| \__,_||_| \__,_||_|
+          _____                    _                _         _
+         / ____|                  | |              (_)       | |
+        | |      ___   _ __   ___ | |_  _ __  __ _  _  _ __  | |_  ___
+        | |     / _ \ | '_ \ / __|| __|| '__|/ _` || || '_ \ | __|/ __|
+        | |____| (_) || | | |\__ \| |_ | |  | (_| || || | | || |_ \__ \
+         \_____|\___/ |_| |_||___/ \__||_|   \__,_||_||_| |_| \__||___/
+
+
+        - positioning a view using polar coordinates, radius and angle: (r, φ)
+        - in lieu of start/end and top/bottom constraints etc.
+        - specify three attributes relative to another view
+        - 0 degrees is top of circle (12 o'clock) and angles increase clock-wise
+
+
+    -->
+
+    <ImageView
+      android:id="@+id/icon_android"
+      android:layout_width="@dimen/icon_size_large"
+      android:layout_height="@dimen/icon_size_large"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider_circular_constraints"
+      android:layout_marginTop="64dp"
+      android:layout_marginBottom="64dp"
+      android:src="@drawable/ic_android_24dp"
+      android:tint="@color/android_green"
+      android:contentDescription="@string/content_description_icon_android" />
+
+    <ImageView
+      android:id="@+id/icon_smartphone_not_pink"
+      android:layout_width="@dimen/icon_size_small"
+      android:layout_height="@dimen/icon_size_small"
+      app:layout_constraintCircle="@+id/icon_android"
+      app:layout_constraintCircleAngle="300"
+      app:layout_constraintCircleRadius="80dp"
+      android:src="@drawable/ic_smartphone_24dp"
+      android:tint="@color/not_pink"
+      android:contentDescription="@string/content_description_icon_not_pink" />
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+    <!-- Toggle Circular Constraints example -->
+    <androidx.constraintlayout.widget.Group
+      android:id="@+id/group_circular_constraints"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="title_circular_constraints,divider_circular_constraints,icon_android,icon_smartphone_not_pink"
+      android:visibility="visible" />
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+    <TextView
+      android:id="@+id/title_placeholders"
+      style="@style/FeatureTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/divider_placeholders"
+      android:layout_marginTop="@dimen/feature_title_margin_top"
+      android:layout_marginBottom="@dimen/feature_title_margin_bottom"
+      android:text="@string/feature_placeholders" />
+
+    <View
+      android:id="@+id/divider_placeholders"
+      style="@style/Divider"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/divider_thickness"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/icon_android"
+      android:layout_marginTop="@dimen/divider_margin_top"
+      android:layout_marginBottom="@dimen/divider_margin_bottom"
+      app:layout_goneMarginTop="@dimen/divider_margin_top_gone" />
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+         _____   _                    _             _      _
+        |  __ \ | |                  | |           | |    | |
+        | |__) || |  __ _   ___  ___ | |__    ___  | |  __| |  ___  _ __  ___
+        |  ___/ | | / _` | / __|/ _ \| '_ \  / _ \ | | / _` | / _ \| '__|/ __|
+        | |     | || (_| || (__|  __/| | | || (_) || || (_| ||  __/| |   \__ \
+        |_|     |_| \__,_| \___|\___||_| |_| \___/ |_| \__,_| \___||_|   |___/
+
+
+        - virtual helper
+        - provides set of layout params that can be applied to an existing view
+        - set the content of the placeholder to an existing view ID (content view)
+        - content view is treated as GONE from original location
+
+
+    -->
+
+
+
+
+
+
+    <Button
+      android:id="@+id/button_change_places"
+      style="@style/Widget.AppCompat.Button.Colored"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/divider_placeholders"
+      android:layout_marginTop="@dimen/placeholder_button_margin_top"
+      android:text="@string/placeholder_button_swap" />
+
+    <TextView
+      android:id="@+id/placeholder_text_title"
+      style="@style/Title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_change_places"
+      android:layout_marginTop="@dimen/text_title_margin_top"
+      android:text="@string/placeholder_image_title" />
+
+    <TextView
+      android:id="@+id/placeholder_text_desc"
+      style="@style/Desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/placeholder_text_title"
+      android:text="@string/placeholder_image_desc" />
+
+    <ImageView
+      android:id="@+id/placeholder_image_view"
+      style="@style/Image"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/john_jackson_649051_unsplash"
+      android:contentDescription="@null" />
+
+    <androidx.constraintlayout.widget.Placeholder
+      android:id="@+id/placeholder_image_primary"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintStart_toEndOf="@id/placeholder_text_desc"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@id/placeholder_text_title"
+      android:layout_marginStart="@dimen/placeholder_image_primary_margin_start"
+      app:content="@+id/placeholder_image_view" />
+
+    <androidx.constraintlayout.widget.Placeholder
+      android:id="@+id/placeholder_image_alt"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/placeholder_text_desc"
+      android:layout_marginTop="@dimen/placeholder_image_alt_margin_top" />
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================ -->
+
+
+
+
+
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

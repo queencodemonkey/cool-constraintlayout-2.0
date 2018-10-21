@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Common -->
+  <!-- ====== -->
+  <dimen name="image_elevation">4dp</dimen>
+
+  <dimen name="text_title_margin_top">16dp</dimen>
+
+  <dimen name="divider_thickness">1px</dimen>
+  <dimen name="divider_margin_top">600dp</dimen>
+  <dimen name="divider_margin_bottom">24dp</dimen>
+  <dimen name="divider_margin_top_gone">48dp</dimen>
+
+  <dimen name="feature_title_margin_top">0dp</dimen>
+  <dimen name="feature_title_margin_bottom">8dp</dimen>
+
+  <!-- Landing screen -->
+  <!-- ============== -->
+  <dimen name="title_margin_vertical">16dp</dimen>
+  <dimen name="title_margin_start">24dp</dimen>
+  <dimen name="title_margin_end">16dp</dimen>
+  <dimen name="title_icon_size">48dp</dimen>
+
+  <dimen name="list_padding_vertical">8dp</dimen>
+
+  <dimen name="list_item_padding_horizontal">16dp</dimen>
+  <dimen name="list_item_padding_vertical">8dp</dimen>
+
+  <!-- ConstraintLayout 1.1 features -->
+  <!-- ============================= -->
+  <dimen name="features_activity_padding_top">24dp</dimen>
+  <dimen name="features_activity_padding_bottom">48dp</dimen>
+  <dimen name="features_activity_padding_horizontal">24dp</dimen>
+  <dimen name="image_margin_horizontal">16dp</dimen>
+  <dimen name="image_height">80dp</dimen>
+
+  <dimen name="percents_view_height">200dp</dimen>
+  <dimen name="percents_view_margin_top">24dp</dimen>
+  <dimen name="percents_view_margin_bottom">0dp</dimen>
+
+  <dimen name="icon_size_large">80dp</dimen>
+  <dimen name="icon_size_small">36dp</dimen>
+  <dimen name="placeholder_button_margin_top">24dp</dimen>
+  <dimen name="placeholder_image_primary_margin_start">16dp</dimen>
+  <dimen name="placeholder_image_alt_margin_top">16dp</dimen>
+
+  <!-- Why MotionLayout? -->
+  <!-- ================= -->
+  <dimen name="why_activity_padding_horizontal">24dp</dimen>
+  <dimen name="why_activity_padding_vertical">48dp</dimen>
+  <dimen name="why_activity_padding_top">40dp</dimen>
+  <dimen name="why_activity_padding_bottom">24dp</dimen>
+  <dimen name="why_title_margin_top">24dp</dimen>
+  <dimen name="why_title_margin_start">0dp</dimen>
+  <dimen name="why_title_margin_end">24dp</dimen>
+  <dimen name="why_desc_margin_top">8dp</dimen>
+  <dimen name="why_desc_margin_bottom">0dp</dimen>
+
+  <!-- MotionLayout -->
+  <!-- ============ -->
+
+</resources>

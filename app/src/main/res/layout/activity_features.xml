@@ -212,7 +212,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       app:constraint_referenced_ids="title_barriers,divider_barriers,image,image_title,image_desc"
-      android:visibility="visible" />
+      android:visibility="gone" />
 
 
 

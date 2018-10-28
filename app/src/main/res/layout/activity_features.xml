@@ -462,11 +462,22 @@
       android:layout_width="@dimen/icon_size_small"
       android:layout_height="@dimen/icon_size_small"
       app:layout_constraintCircle="@+id/icon_android"
-      app:layout_constraintCircleAngle="300"
-      app:layout_constraintCircleRadius="80dp"
+      app:layout_constraintCircleAngle="160"
+      app:layout_constraintCircleRadius="100dp"
       android:src="@drawable/ic_smartphone_24dp"
       android:tint="@color/not_pink"
       android:contentDescription="@string/content_description_icon_not_pink" />
+
+    <ImageView
+      android:id="@+id/icon_smartphone_mint"
+      android:layout_width="@dimen/icon_size_small"
+      android:layout_height="@dimen/icon_size_small"
+      app:layout_constraintCircle="@+id/icon_smartphone_not_pink"
+      app:layout_constraintCircleAngle="225"
+      app:layout_constraintCircleRadius="48dp"
+      android:src="@drawable/ic_smartphone_24dp"
+      android:tint="@color/mint"
+      android:contentDescription="@string/content_description_icon_android" />
 
 
 

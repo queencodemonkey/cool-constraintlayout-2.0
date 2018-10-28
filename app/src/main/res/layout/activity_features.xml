@@ -124,7 +124,7 @@
       style="@style/Image"
       android:layout_width="0dp"
       android:layout_height="@dimen/image_height"
-      app:layout_constraintStart_toEndOf="@+id/image_title"
+      app:layout_constraintStart_toEndOf="@+id/barrier"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="@+id/image_title"
       android:layout_marginStart="@dimen/image_margin_horizontal"
@@ -153,6 +153,13 @@
       app:layout_constraintTop_toBottomOf="@+id/image_title"
       android:text="@string/barrier_image_desc_02" />
     <!--android:text="@string/barrier_image_desc_01" />-->
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="image_title,image_desc"
+      app:barrierDirection="end" />
 
 
 

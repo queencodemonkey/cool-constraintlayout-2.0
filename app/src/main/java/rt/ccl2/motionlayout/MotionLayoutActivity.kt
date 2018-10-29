@@ -15,7 +15,7 @@ class MotionLayoutActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_motion_layout)
 
-    container.postDelayed({ swapWithConstraintSet() }, 1000L)
+//    container.postDelayed({ swapWithConstraintSet() }, 1000L)
   }
 
   private fun swapWithConstraintSet() {

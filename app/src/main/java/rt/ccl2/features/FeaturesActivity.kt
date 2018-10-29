@@ -49,6 +49,7 @@ class FeaturesActivity : AppCompatActivity() {
   private var swapped = false
 
   private fun placeholderSwap() {
+    TransitionManager.beginDelayedTransition(constraintLayout)
     if (swapped) {
       placeholderPrimary.setContentId(R.id.placeholder_image_view)
       placeholderAlt.setContentId(-1)

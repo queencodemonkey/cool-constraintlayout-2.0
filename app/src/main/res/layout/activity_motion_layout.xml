@@ -36,7 +36,7 @@
     android:src="@drawable/ic_cloud_24dp"
     android:contentDescription="@null" />
 
-  <ImageView
+  <androidx.constraintlayout.utils.widget.ImageFilterView
     android:id="@+id/icon_android"
     style="Image"
     android:layout_width="80dp"
@@ -44,7 +44,8 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    android:src="@drawable/ic_android_24dp"
+    android:src="@drawable/john_jackson_649051_unsplash"
+    app:altSrc="@drawable/luca_micheli_422053_unsplash_1024"
     android:contentDescription="@string/content_description_icon_android" />
 
   <ImageView

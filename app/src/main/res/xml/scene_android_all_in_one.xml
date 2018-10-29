@@ -15,6 +15,13 @@
         app:keyPositionType="parentRelative"
         app:percentX="1"
         app:framePosition="20" />
+      <KeyAttribute
+        app:target="@id/icon_android"
+        app:framePosition="50">
+        <CustomAttribute
+          app:attributeName="colorFilter"
+          app:customColorValue="#FF0000" />
+      </KeyAttribute>
     </KeyFrameSet>
   </Transition>
 

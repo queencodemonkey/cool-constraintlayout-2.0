@@ -9,6 +9,9 @@
       app:touchAnchorId="@+id/icon_android"
       app:touchAnchorSide="top"
       app:dragDirection="dragUp" />
+    <OnClick
+      app:target="@id/icon_cloud_01"
+      app:clickAction="toggle" />
     <KeyFrameSet>
       <KeyPosition
         app:target="@id/icon_cloud_02"

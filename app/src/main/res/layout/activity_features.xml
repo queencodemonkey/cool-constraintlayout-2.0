@@ -502,8 +502,8 @@
       android:id="@+id/group_circular_constraints"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:constraint_referenced_ids="title_circular_constraints,divider_circular_constraints,icon_android,icon_smartphone_not_pink"
-      android:visibility="visible" />
+      app:constraint_referenced_ids="title_circular_constraints,divider_circular_constraints,icon_android,icon_smartphone_not_pink,icon_smartphone_mint"
+      android:visibility="gone" />
 
 
 

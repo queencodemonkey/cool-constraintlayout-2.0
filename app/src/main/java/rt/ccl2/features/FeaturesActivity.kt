@@ -52,10 +52,10 @@ class FeaturesActivity : AppCompatActivity() {
     TransitionManager.beginDelayedTransition(constraintLayout)
     if (swapped) {
       placeholderPrimary.setContentId(R.id.placeholder_image_view)
-      placeholderAlt.setContentId(-1)
+      placeholderAlt.setContentId(R.id.placeholder_image_view_02)
     } else {
       placeholderAlt.setContentId(R.id.placeholder_image_view)
-      placeholderPrimary.setContentId(-1)
+      placeholderPrimary.setContentId(R.id.placeholder_image_view_02)
     }
     swapped = !swapped
   }

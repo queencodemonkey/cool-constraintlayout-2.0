@@ -646,7 +646,16 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@id/placeholder_text_desc"
-      android:layout_marginTop="@dimen/placeholder_image_alt_margin_top" />
+      android:layout_marginTop="@dimen/placeholder_image_alt_margin_top"
+      app:content="@+id/placeholder_image_view_02" />
+
+    <ImageView
+      android:id="@+id/placeholder_image_view_02"
+      style="@style/Image"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/luke_stackpoole_638698_unsplash"
+      android:contentDescription="@null" />
 
 
 

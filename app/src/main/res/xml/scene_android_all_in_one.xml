@@ -20,6 +20,34 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       android:layout_marginTop="24dp" />
+    <Constraint
+      android:id="@+id/icon_cloud_01"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias=".6"
+      android:layout_marginBottom="192dp" />
+    <Constraint
+      android:id="@id/icon_cloud_02"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias=".2"
+      android:layout_marginBottom="32dp"
+      app:pathMotionArc="flip" />
+    <Constraint
+      android:id="@+id/icon_cloud_03"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias=".85"
+      android:layout_marginBottom="48dp" />
   </ConstraintSet>
 
   <ConstraintSet android:id="@+id/end">
@@ -32,6 +60,33 @@
       app:layout_constraintBottom_toBottomOf="parent"
       android:layout_marginTop="24dp"
       android:layout_marginBottom="24dp" />
+    <Constraint
+      android:id="@id/icon_cloud_01"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintHorizontal_bias=".6"
+      android:layout_marginTop="48dp" />
+    <Constraint
+      android:id="@id/icon_cloud_02"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintHorizontal_bias=".05"
+      android:layout_marginTop="120dp" />
+    <Constraint
+      android:id="@id/icon_cloud_03"
+      android:layout_width="144dp"
+      android:layout_height="144dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintHorizontal_bias=".9"
+      android:layout_marginTop="184dp" />
   </ConstraintSet>
 
 </MotionScene>
